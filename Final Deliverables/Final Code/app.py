@@ -3,7 +3,7 @@ from flask_mail import *
 from markupsafe import escape
 
 import ibm_db
-conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=2f3279a5-73d1-4859-88f0-a6c3e6b4b907.c3n41cmd0nqnrk39u98g.databases.appdomain.cloud;PORT=30756;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=blk20068;PWD=LsEEBW71f9uXFNsf",'','')
+conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=2f3279a5-73d1-4859-88f0-a6c3e6b4b907.c3n41cmd0nqnrk39u98g.databases.appdomain.cloud;PORT=30756;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=iserid;PWD=password",'','')
 
 
 app = Flask(__name__)
@@ -26,7 +26,7 @@ def adminreg():
 
 @app.route('/recipregistration')
 def recipregistration():
-  return render_template('recipregistration.html')   ## recipient signup page uh
+  return render_template('recipregistration.html')   ## recipient signup page 
 
 @app.route('/recipientlogin')
 def recipientlogin():
@@ -85,9 +85,6 @@ def donarlogin():
   return render_template('donlogin.html')      ## donar login page
 
 
-# @app.route('/donarrequest')
-# def donarrequest():
-#   return render_template('donar.html')  ## plasma requesting page
 
 
 ## donar details table
@@ -220,12 +217,6 @@ def delete(name):
     if donar:
       return render_template("plasmadon.html", donar = donar, msg="Delete successfully")
 
-
-  
-  # # while student != False:
-  # #   print ("The Name is : ",  student)
-
-  # print(student)
   return "success..."
 
 
