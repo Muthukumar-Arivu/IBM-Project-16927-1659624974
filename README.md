@@ -9,7 +9,7 @@
 # ⏺️IBM-Project-16927-1659624974
 
 <h1>🧑‍💻TEAM MEMBERS </h1>
-<li> MuthukUMAR S</li> 
+<li> MUTHUKUMAR S</li> 
 <li>KOSALARAMAN A </li>
 <li>MADHANKUMAR R</li>
 <li>BHARATH B </li>
